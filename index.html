@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title>东风雪铁龙龙友汇</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script>
+        var produce="http://tanabatamembers.dfcitroenclub.com/page/lyh-8/index.html";
+        var dev="127.0.0.1/page/lyh-8/index.html"
+        var getWeixinOpenid='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa0d59d5a3705a608&redirect_uri=https://mycitroen.dpca.com.cn/weixin/transfer/transferStation.do?param={"appID":"wxa0d59d5a3705a608","appsecret":"e75d5f11345b4f1f66b91fa319eaa079","url":"http://tanabatamembers.dfcitroenclub.com/page/lyh-8/index.html"}&response_type=code&scope=snsapi_base&state=1#wechat_redirect';
+        if(location.href.length<70){
+            location.href=getWeixinOpenid;
+        }
+    </script>
+</head>
+<body>
+<div id="my-container" class="page-bg">
+    <div id="head-top">
+        <img src="images/head_02.jpg" alt=""/>
+    </div>
+    <div id="main"></div>
+</div>
+<div id="hint1" class="hint">
+    <img src="images/hint1.png" alt=""/>
+    <span class="close"></span>
+</div>
+<div id="hint2" class="hint">
+    <img src="images/hint2.png" alt=""/>
+    <span class="close"></span>
+</div>
+<div id="hint3" class="hint">
+    <img src="images/hint3.png" alt=""/>
+    <span class="close"></span>
+</div>
+<div id="hint4" class="hint">
+    <img src="images/hint4.png" alt=""/>
+    <span class="close"></span>
+</div>
+<div id="covered">
+    <img src="images/head_02.jpg" alt=""/>
+    <img id="arrow" src="images/arrow-right.png" alt=""/>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+body{
+    font:14px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+a{
+    color:#666;
+    text-decoration:none;
+}
+a:hover{
+    color:#ff0700;
+    text-decoration:underline;
+}
+img{
+    vertical-align: bottom;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+@media screen and (min-width:776px ){
+    #my-container{
+        width: 320px !important;
+        height: 568px !important;
+        margin: 0 auto;
+    }
+}
+#my-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+/*加载前*/
+#covered{
+    position:absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: url("../images/index-bg.jpg") no-repeat top left;
+    background-size:cover;
+}
+#covered img:first-child{
+    width: 100%;
+}
+#covered #arrow{
+    position: absolute;
+    left: 45%;
+    width: 10%;
+    bottom:30px;
+    animation: an1 1s infinite;
+}
+@keyframes an1 {
+    0%{bottom:30px}
+    100%{bottom:40px}
+}
+/*page1*/
+#page1-main div,#page1-main div ul{
+    overflow: hidden;
+}
+#page1-main{
+    overflow: hidden;
+}
+.page-bg{
+    background-color: #fff;
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-size: 100% 100%;
+}
+#head-top img{
+    width: 100%;
+}
+
+.activity-demand{
+    text-align: center;
+    line-height: 18px;
+    margin: 5px 0;
+}
+
+.activity-notice{
+    text-align: center;
+    margin-top: 70px;
+}
+.activity-notice img{
+    width: 60%;
+}
+
+.select-btn{
+    overflow: hidden;
+    width: 70%;
+    margin: 5px auto;
+}
+.select-btn li{
+    float: left;
+    width: 31%;
+    padding: 1%;
+}
+.select-btn img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.page1-btn {
+    text-align: center;
+}
+.page1-btn a{
+    background: #eee;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    padding:10px 0;
+    margin:0 10px;
+}
+.hint{
+    position: absolute;
+    background: rgba(120,120,120,0.5);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.hint img{
+    width:80%;
+    margin:10%;
+}
+#hint1{
+    display: none;
+}
+#hint2{
+    display: none;
+}
+#hint3{
+    display: none;
+}
+#hint4{
+    display: none;
+}
+.close{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height:30px;
+    right:10%;
+    top:10%;
+}
+/*page2*/
+#luck-code{
+    width: 230px;
+    height:130px;
+    margin: 20px auto;
+    background: url("../images/luck.png") no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+#luck-code p{
+    position: absolute;
+    bottom: 17px;
+    font-size: 37px;
+    color: #f6f;
+    left: 57px;
+}
+#paragraph{
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+#paragraph p span{
+    color: #ff0700;
+}
